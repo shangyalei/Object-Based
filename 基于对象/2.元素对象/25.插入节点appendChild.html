@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p id="msg">msg</p>
+<p id="content">content</p>
+<p id="aaa">world</p>
+
+<script>
+
+    //appendChild(node);在指定元素节点的最后一个子节点之后添加节点。
+    //需要注意的是：该方法返回的是新的子节点。
+    //它经常和createElement(),createTextNode(),cloneNode()配合使用。
+    //另外appendChild()不仅可以用来追加新的元素
+    //也可以挪动文档中现有的元素。
+
+    var container=document.createElement("p");
+    var t=document.createTextNode("尚亚磊");
+    container.appendChild(t);
+    document.body.appendChild(container);
+
+    var mes=document.getElementById("msg");
+    var content=document.getElementById("content");
+    //发现msg放到了content后面去了
+    content.appendChild(mes);
+
+
+
+</script>
+
+
+
+</body>
+</html>

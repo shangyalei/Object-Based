@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+
+
+<div>hellohellohellohellohellohellohellohellohellohellohellohellohellohellohello</div>
+
+
+
+<script>
+
+    //编辑事件
+//    onbeforecopy 当页面当前的被选择内容将要复制到浏览者系统的剪贴板前触发此事件
+//    onbeforecut 当页面中的一部分或者全部的内容将被移离当前页面[剪贴]并移动到浏览者的系统剪贴板时触发此事件
+//    onbeforepaste 内容将要从浏览者的系统剪贴板传送[粘贴]到页面中时触发此事件
+    document.documentElement.onbeforepaste=function(){
+        alert("请先注册，然后才能进行复制copy");
+    };
+
+
+</script>
+
+</body>
+
+</html>
+

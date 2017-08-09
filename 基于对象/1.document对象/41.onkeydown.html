@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+//        JavaScript onkeydown 事件
+//        用户按下一个键盘按键时会触发 onkeydown 事件。与 onkeypress 事件不同的是，
+//        onkeydown 事件是响应任意键按下的处理（包括功能键），onkeypress 事件只响应字符键按下后的处理。
+
+//        提示
+//        Internet Explorer/Chrome 浏览器使用 event.keyCode 取回被按下的字符，
+//        而 Netscape/Firefox/Opera 等浏览器使用 event.which。
+//        onkeydown 获取用户按下的键
+//        下面是一个利用 onkeydown 事件获取用户按下键盘按键信息的例子：
+
+        function noNumbers(e)
+        {
+            var keynum;
+            var keychar;
+
+            keynum = window.event ? e.keyCode : e.which;
+            keychar = String.fromCharCode(keynum);
+            alert(keynum+':'+keychar);
+        }
+    </script>
+</head>
+<body>
+
+
+<input type="text" onkeydown="return noNumbers(event)" />
+
+
+<script>
+    //如上面例子所示，event.keyCode/event.which 得到的是一个按键对应的数字值（Unicode 编码），
+    // 常用键值对应如下：
+
+//    数字值	        实际键值
+//    48到57	         0到9
+//    65到90	         a到z（A到Z）
+//    112到135	     F1到F24
+//    8	             BackSpace（退格）
+//    9	             Tab
+//    13	         Enter（回车）
+//    20	         Caps_Lock（大写锁定）
+//    32	         Space（空格键）
+//    37	         Left（左箭头）
+//    38	         Up（上箭头）
+//    39	         Right（右箭头）
+//    40	         Down（下箭头）
+
+//    在 Web 应用中，常常可以看到利用 onkeydown 事件的 event.keyCode/event.which 来获取用户的一些键盘操作，从而运行某些运用的例子。如在用户登录时，如果按下了大写锁定键（20），则加以提示大写锁定；在有翻页的时候，如果用户按下左右箭头，触发上下翻页等。
+//    获得 Unicode 编码值之后，如果需要得到实际对应的按键值，可以通过 Srting 对象的 fromCharCode 方法（String.fromCharCode()）获得。注意，对于字符获得的始终是大写字符，而对于其他一些功能按键，得到的字符可能不太易阅读。
+//
+
+</script>
+
+
+
+
+</body>
+</html>

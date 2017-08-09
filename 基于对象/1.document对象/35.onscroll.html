@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body style="height: 5000px;">
+
+<div id="div1"></div>
+
+<script type="text/javascript">
+
+    //    当浏览器滚动条滚动时会触发 onscroll 事件，通常情况下指上下滚动条滚动。页面相关
+    //    JavaScript onscroll 事件
+    //    当浏览器滚动条滚动时会触发 onscroll 事件，通常情况下指上下滚动条滚动。
+    //    需要注意的是，浏览器一旦检测到滚动条发生滚动，就可以触发 onscroll 事件，而无需等到滚动行为结束。
+    var i=0;
+    document.onscroll=function(){
+
+        console.log(document.getElementById('div1').innerHTML=i++);
+    }
+
+</script>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div id="parent">
+    <div id="a">a</div>
+    <div id="b">b</div>
+    <div id="c">c</div>
+</div>
+
+<script>
+
+    //removeChild(node);可以从子节点列表中删除某个节点。
+    //如果删除成功，则此方法返回被删除的节点。
+    //如果删除失败，则返回null。
+    //如果想把某个节点从一个地方移动道另一个地方，不必使用removeChild,
+    //可以使用前面的appendChild和insertBefore()，它们都会自动先删除节点，然后移动到你指定的地方。
+    var parent=document.getElementById('parent');
+
+    var b=document.getElementById("b");
+
+    var ele=parent.removeChild(b);
+
+    console.log(ele);
+
+    //这个方法也是有父元素来调用
+
+
+
+</script>
+
+
+
+</body>
+</html>

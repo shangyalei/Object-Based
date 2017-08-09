@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div id="parent">
+    <p id="content">专注前端开发，专注用户体验</p>
+    <div id="msg"><div>测试</div></div>
+    <p id="aaa">angularJs</p>
+</div>
+
+<script>
+    //insertBefore(newNode,oldNode)
+    //在已有的子节点前面插入一个新的子节点。
+    //使用该方法注意以下两点：
+    //1.第二个参数是可选的，如果第二个参数不写，将默认添加到文档的最后面。等同于appendChild();
+    //2.此方法返回新的子节点。
+    var msg=document.getElementById("msg");
+    var aaa=document.getElementById("aaa");
+    var parent=document.getElementById("parent");
+    parent.insertBefore(aaa,msg);//这个方法由父元素调用
+
+    //简单的说就是，有父元素调用该方法，然后给它的子元素调换位置。
+
+
+</script>
+
+
+</body>
+</html>

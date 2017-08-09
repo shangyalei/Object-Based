@@ -1,0 +1,79 @@
+JavaScript 事件<br/>
+JavaScript 事件<br/>
+网页中能被 JavaScript 侦测到的行为称为 JavaScript 事件。以下是一些常见的 JavaScript 事件举例：<br/>
+页面内容被浏览器载入<br/>
+用户点击一个按钮<br/>
+用户按下某个按键<br/>
+事件通常和 JavaScript 函数一起配合使用，即以事件驱动函数，来完成我们希望的某些功能。<br/>
+常用 JavaScript 事件列表<br/>
+以下是常用的 JavaScript 事件列表，点击对应链接可查看每个事件具体的用法示例：<br/>
+
+一般事件<br/>
+事件属性	               触发该事件的条件<br/>
+onclick 事件	           鼠标点击某个对象<br/>
+ondblclick 事件	       鼠标双击某个对象<br/>
+onmousedown 事件	       按下鼠标键<br/>
+onmouseup 事件	       鼠标键按下后松开<br/>
+onmouseover 事件	       鼠标移动到某对象范围的上方<br/>
+onmouseout 事件	       鼠标离开某对象范围<br/>
+onkeydown 事件	       键盘上某个按键被按下<br/>
+onkeypress 事件	       键盘上某个键被按下或按住<br/>
+onkeyup 事件	           键盘上某个键（按下后）被松开<br/>
+
+
+表单相关事件<br/>
+事件属性	       触发该事件的条件<br/>
+onblur 事件	     元素失去焦点<br/>
+onfocus 事件	     元素获得焦点<br/>
+onchange 事件	用户改变表单域的内容<br/>
+onsubmit 事件	表单提交按钮被点击<br/>
+onreset 事件	     表单重置按钮被点击<br/>
+
+
+页面相关事件<br/>
+事件属性	触发该事件的条件<br/>
+onload 事件	页面或图像（被浏览器）加载完成<br/>
+onunload 事件	用户退出页面（或页面改变为其他页面）<br/>
+onerror 事件	当加载文档或图像时发生某个错误<br/>
+onresize 事件	窗口或框架被调整尺寸<br/>
+onmove 事件	窗口或框架被移动<br/>
+onscroll 事件	浏览器的滚动条位置发生变化<br/>
+onstop 事件	浏览器的停止按钮被按下或者正在下载的文件被中断<br/>
+
+编辑事件<br/>
+事件属性	触发该事件的条件<br/>
+onselect 事件	当文本内容被选择<br/>
+onbeforecopy 事件	当页面被选择内容将要复制到系统剪贴板前<br/>
+oncopy 事件	当前被选择的内容被复制后<br/>
+oncut 事件	当前被选择的内容被剪切<br/>
+onpaste 事件	当内容被粘贴时<br/>
+
+//总结：顶层的3个类是一样的：node类-->EventTarget类-->Object类
+//为了和外界的数据进行互动，所定义的方法就是接口。
+1.document对象的属性和方法
+    document对象继承关系：
+    document.__proto__-->HTMLDocument.__proto__-->Document.__proto__
+    -->Node.__proto__-->EventTarget.__proto__-->Object
+
+    div元素的继承关系
+    oDiv.__proto__-->HTMLDivElement.__proto__-->HTMLElement.__proto__
+    -->Element.__proto__-->Node.__proto__-->EventTarget.__proto__-->Object
+
+    p元素的继承关系
+
+    oP.__proto__-->HTMLParagraphElement.__proto__-->HTMLElement.__proto__
+    -->Element.__proto__-->Node.__proto__-->EventTarget.__proto__-->Object
+
+    a元素对象的继承关系
+    oA.__proto__-->HTMLAnchorElement.__proto__-->HTMLElement.__proto__
+    -->Element.__proto__-->Node.__proto__-->EventTarget.__proto__-->Object
+
+    img元素对象的继承关系
+    oImg.__proto__-->HTMLImageElement.__proto__-->-->HTMLElement.__proto__
+    -->Element.__proto__-->Node.__proto__-->EventTarget.__proto__-->Object
+
+
+
+
+
+

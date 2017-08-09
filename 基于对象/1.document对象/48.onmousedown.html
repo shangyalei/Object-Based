@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<!--JavaScript onmousedown 事件
+当鼠标按键（任何一个键）被按下时，会触发 onmousedown 事件，如下例子所示：-->
+
+
+<p>
+    <img src="../../11.响应式网页设计/img/zhoujielun.png" onmousedown="alert('您点击了这幅图片！')" />
+</p>
+
+
+<!--onmousedown 事件与 onClick 事件的区别
+onmousedown 事件与 onClick 事件在我们看来非常相似，
+其实 onClick 事件实际是由 onmousedown 事件（确切是鼠标0键被按下）
+onmouseup 事件组成的。通常我们在按下鼠标键触发 onmousedown 事件之后，
+会不自觉的将鼠标键松开，因此感觉 onmousedown 事件与 onClick 事件非常相似。
+由于上述 onmousedown 事件与 onClick 事件的区别，
+因此 onmousedown 事件不必等到 onmouseup 事件的触发，就可以产生对应的 JavaScript 代码响应。
+因此在页面需要反应更灵敏的时候，或不需要 onmouseup 事件的时候，就使用 onmousedown 事件。-->
+
+
+
+</body>
+</html>

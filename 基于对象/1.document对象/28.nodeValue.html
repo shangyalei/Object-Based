@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div id="emp"></div>
+<div id="full">I hava contents</div>
+
+<script>
+//    注意  nodeValue 节点值
+//    对于document文档自身来说，nodeValue返回null。
+//    对于元素节点，nodeValue返回null。也就是说元素节点没有nodeValue
+//    对于文本节点、注释和CDATA部分来说，noteValue返回其节点的内容。
+//    对于节点属性来说，属性的值将会被返回。
+    //如果有值的话，value则是一个包含当前节点值的字符串，如果没有则是null。
+
+    //返回null
+    var val1=document.nodeValue;
+    console.log(val1);
+
+    //返回null,因为val2代表的是一个元素节点的noteValue。
+    var val2=document.getElementById("emp").nodeValue;
+
+    //报错，因为val3代表的节点无子节点
+    var val3=document.getElementById("emp").firstChild.nodeValue;
+
+    //返回null,因为val4代表的是一个元素节点的noteValue.
+    var val4=document.getElementById("full").nodeValue;
+
+    //返回一个"I hava contents",因为val5代表的是一个文本节点的子节点
+    var val5=document.getElementById("full").firstChild.nodeValue;
+</script>
+
+
+
+</body>
+</html>

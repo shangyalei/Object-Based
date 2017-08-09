@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+//        JavaScript onclick 事件
+//        当鼠标点击页面上某个对象时，会触发 onclick 事件
+        function hello(){
+            var name = document.getElementById("name").value;
+            if( name == "") {
+                alert("请输入你的姓名！");
+                return false;
+            } else {
+                alert(name + "，你好！");
+            }
+        }
+    </script>
+</head>
+<body>
+
+姓名：<input type="text" id="name" />
+<input type="button" onclick="hello()" value="确定" />
+
+
+</body>
+</html>

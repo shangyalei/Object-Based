@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--
+JavaScript onmouseup 事件
+当鼠标按键（任何一个键）被松开时，会触发 onmouseup 事件，-->
+
+
+<!-- 适当延长按下鼠标键后释放鼠标键的事件，能感觉得到 onmouseup 事件是在鼠标按键释放的时候触发的。 -->
+
+<p>
+    <img src="../../11.响应式网页设计/img/zhoujielun.png" onmouseup="alert('您点击了这幅图片！')" />
+</p>
+
+
+<p>
+    <img src="../../11.响应式网页设计/img/zhoujielun.png" onmouseup="pressButton(event)"/>
+</p>
+
+
+
+
+
+<script>
+
+//    在应用中，
+//    识别用户的按键
+//    利用 JavaScript onmouseup 事件的 event.button 属性，可以识别用户按下的键，将上面的例子进行改造：
+
+    function pressButton(evt){
+        var key;
+        switch( evt.button )
+        {
+            case 0: key = "左键"; break;
+            case 2: key = "右键"; break;
+            case 3: key = "左键和右键"; break;
+            case 4: key = "中键"; break;
+            case 5: key = "左键和中键"; break;
+            case 6: key = "中键和右键"; break;
+            case 7: key = "所有键"; break;
+        }
+        alert(key + "点击了图片！");
+    }
+
+/*运行上面的例子，不同的按键，会有不同的提示信息。
+除了 onmouseup 事件，也可以利用 onmousedown 事件来识别用户的按键，
+并且 onmouseup 事件通常无法识别双键同时按下的效果，而 onmousedown 事件则可以识别。*/
+
+</script>
+
+
+
+
+
+</body>
+</html>

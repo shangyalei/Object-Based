@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+//    默认情况下，文档刚刚加载完成的时候，
+//    document.activeelement中保存的是document.body元素的引用。
+//    文档加载期间，document.activeelement的值为null。
+//    通过document.activeelement可以判断文档是否加载完成。
+
+//    window.onload = function(){
+//        var btn = document.getElementById("btn");
+//
+//        //页面加载获取焦点
+//        console.log(document.activeElement); // body
+//
+//        //调用focus()方法获取焦点
+//        btn.focus();
+//
+//        console.log(document.activeElement); // btn
+//        document.activeElement.style.color='red';
+//    };
+</script>
+<body>
+
+<input id="btn" type="button" value="梦龙小站"/>
+<input id="btn2" type="button" value="梦龙小站"/>
+<script>
+    //　Document.activeelement属性始终会引用DOM中当前获得了焦点的元素。
+    btn.focus();
+    btn2.focus();
+    document.activeElement.style.color='blue';
+
+
+</script>
+
+
+
+</body>
+</html>

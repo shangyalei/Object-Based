@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1"></div>
+
+<script>
+    //父级参照物，默认情况下父级参照物是body
+    var oDiv=document.getElementById("div1");
+    console.log(oDiv.offsetParent);
+
+    //offsetParent和parentNode没有一点关系
+
+
+    /*
+    * 如何改变默认参数物
+    * 1.只要父级元素设置position:absolute/relative/fixed;
+    * 2.则这个元素就是其后代元素的offsetParent
+    *
+    * 偏移量：
+    * 当前元素的外边框(margin值)到参照物内边框的距离(padding值)
+    *
+    * document.documentElement.offsetParent=null;
+    *
+    *
+    *
+    * */
+
+
+
+</script>
+
+</body>
+</html>

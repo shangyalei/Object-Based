@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        #myDIV {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+定义和用法
+onwheel 事件在鼠标滚轮在元素上下滚动时触发。
+onwheel 事件同样可以在触摸板上滚动或放大缩小区域时触发（如笔记本上的触摸板）。
+注意： 在 IE 浏览器中，只能通过 addEventListener() 方法支持 wheel 事件。 在 DOM 对象中没有 onwheel 属性。
+
+<br/>
+<br/>
+<br/>
+
+<div id="myDIV">该实例演示了如何使用 addEventListener() 方法向 DIV 元素添加 "wheel" 事件。在这个区域上下滚动鼠标滚轮!</div>
+<p>当你在 div 元素中滚动鼠标滚轮时，脚本函数会设置 div 的字体大小为 35 像素。</p>
+<p><strong>注意：</strong> Safari 浏览器不支持 wheel 事件</p>
+<script>
+    document.getElementById("myDIV").addEventListener("wheel", myFunction);
+    function myFunction() {
+        document.getElementById("myDIV").style.fontSize = "35px";
+    }
+</script>
+
+</body>
+</html>

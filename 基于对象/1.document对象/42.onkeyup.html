@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script language="JavaScript">
+
+        function copy(input) {
+            document.getElementById("display").innerHTML = input.value;
+        }
+
+    </script>
+</head>
+<body>
+
+<!--JavaScript onkeyup 事件-->
+<!--键盘按键被松开时会触发 onkeyup 事件。-->
+
+<!--注意：onkeyup 事件是在按键被松开时触发的，-->
+<!--因此如果您在输入字符时如果按住按键不放，那么输入的字符不会立即显示在下面的。-->
+
+<!--下面的例子演示了在文本输入域中输入文字，将输入的文字同时显示在其他标签中（如本例中的<p>标签）：-->
+
+
+<input type="text" onkeyUp="copy(this)" />
+<p id="display"></p>
+
+
+
+</body>
+</html>

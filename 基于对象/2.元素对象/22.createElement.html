@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p{
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+
+<p>hello world</p>
+
+<script>
+
+    //createElement()方法可创建元素节点，返回一个元素节点。具有指定的标签名
+    //创建出来的元素不会自动添加到文档中，处于游离状态，所有不具有nodeParent属性。
+    //添加到文档中可使用insertBefore()和replaceChild()
+
+    var oDiv=document.createElement("div");
+    document.body.appendChild(oDiv);
+    oDiv.style.width="100px";
+    oDiv.style.height="100px";
+    oDiv.style.backgroundColor="red";
+
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<script>
+
+    //createAttribute()给元素添加属性
+    //createTextNode()用于创建一个文本节点 所以nodeType 等于3 nodeName=#text
+    //createTextNode()创建出来的节点也不会自动添加到文档中，
+    //需要使用appendChild(),insertBefore(),replaceChild()
+
+
+
+
+    var oDiv=document.createElement("div");
+    oDiv.setAttribute("title","my demo");
+    document.body.appendChild(oDiv);
+    //如果需要添加文字，则需要createTextNode();这个方法
+    var oTextNode=document.createTextNode("my demo");
+    var mes=document.createTextNode("hello world");
+    var container=document.createElement("p");
+    container.appendChild(mes);
+    document.body.appendChild(container);
+
+    //注意：一定要理解好文本节点和元素节点的区别
+    //元素节点是没有nodeValue的，只有文本节点才有nodeValue
+    //在IE9以下的ie浏览器中，回车换行不算一个文本节点，但在标准浏览器中这是一个文本节点
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

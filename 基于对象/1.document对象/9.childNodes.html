@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1">
+    <p>hello world</p>
+    <p>hello world</p>
+    <p>hello world</p>
+    <p>
+        <span>hello world</span>
+    </p>
+    <p>hello world</p>
+</div>
+
+
+</body>
+<script>
+    //所有主要浏览器都支持 childNodes 属性  返回子节点的集合(所有类型的节点) 数组
+    var oDiv=document.getElementById('div1');
+    console.log(oDiv.childNodes);
+    console.log(oDiv.childElementCount);
+    oDiv.childNodes[oDiv.childElementCount].style.color='red';
+
+</script>
+</html>

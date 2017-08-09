@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+<div id="div1"></div>
+
+<script type="text/javascript">
+
+    // 当浏览器的窗口大小被改变时触发此事件  页面相关
+    //var client=document.documentElement.clientWidth; 不要这样写 不销毁
+
+    window.onresize=function(){
+        document.getElementById('div1').innerHTML=document.documentElement.clientWidth;
+    }
+
+</script>
+
+
+</body>
+
+</html>
+

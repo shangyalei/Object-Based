@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p id="p"></p>
+
+<script>
+    //获取属性，设置属性，删除属性
+    /*
+    * 1.getAttribute():用于获取节点的属性，如果属性不存在则返回空
+    * 2.setAttribute():用于设置节点的属性
+    * 3.removeAttribute():用于移除节点的属性
+    */
+
+    var oP=document.getElementById('p');
+    oP.setAttribute("title","my demo");
+
+    oP.setAttribute("name","zhu");
+
+    var str=oP.getAttribute("title");
+
+    console.log(str);
+
+    var str1=oP.removeAttribute("name");
+
+</script>
+
+
+
+</body>
+</html>

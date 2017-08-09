@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div id="parent">
+    <div id="a">a</div>
+    <div id="b">b</div>
+    <div id="c">c</div>
+</div>
+
+
+<script>
+    //hasChildNodes()
+    //此方法可以判断指定节点是否存在子节点，若存在一个或多个子节点，则返回true，否则返回false
+    var ps=document.getElementById('parent');
+
+    if(ps.hasChildNodes){
+        alert(ps.childNodes.length);
+    }
+
+</script>
+
+
+
+</body>
+</html>

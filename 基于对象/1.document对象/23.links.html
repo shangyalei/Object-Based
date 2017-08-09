@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<a href="#">hello world</a>
+<a href="#">hello world</a>
+<a href="#">hello world</a>
+<a href="#">hello world</a>
+<a href="#">hello world</a>
+<a href="#">hello world</a>
+
+
+<script>
+
+    //links 属性返回一个包含文档中所有具有 href 属性值的 <area> 元素 <a> 元素的集合。数组
+
+    console.log(document.links);
+
+    for(var i=0;i<document.links.length;i++){
+        document.links[i].style.color='red';
+    }
+
+
+</script>
+
+
+</body>
+</html>

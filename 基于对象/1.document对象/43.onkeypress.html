@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+//        JavaScript onkeypress 事件
+//        用户按下或按住一个键盘按键时会触发 onkeypress 事件。
+//        注意：onkeypress 事件与 onkeydown 事件有些细微差别，onkeypress 事件不做相应功能键按下的处理。具体可将下面的示例更改为 onkeydown 事件后，可输入 !@#$ 等特殊字符即可体会出二者之间的差别。
+//        提示
+//        Internet Explorer/Chrome 浏览器使用 event.keyCode 取回被按下的字符，而 Netscape/Firefox/Opera 等浏览器使用 event.which。
+//        利用 onkeypress 事件只允许输入数字
+//        下面是一个利用 onkeypress 事件只允许用户在表单域输入数字的例子：
+
+        function checkNumber(e)
+        {
+            var keynum = window.event ? e.keyCode : e.which;
+            //alert(keynum);
+            var tip = document.getElementById("tip");
+            if( (48<=keynum && keynum<=57) || keynum == 8 ){
+                tip.innerHTML = "";
+                return true;
+            }else {
+                tip.innerHTML = "提示：只能输入数字！";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div>请输入数字：<input type="text" onkeypress="return checkNumber(event);" />
+    <span id="tip"></span>
+</div>
+
+
+
+</body>
+</html>

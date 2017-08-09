@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<a name="a1" href="#">锚点1</a>
+<a name="a2" href="#">锚点2</a>
+<a name="a3" href="#">锚点3</a>
+<a name="a4" href="#">锚点4</a>
+<a href="#">hello world</a>
+<a href="#">hello world</a>
+<a href="#">hello world</a>
+
+
+<script>
+    //anchors属性返回当前文档中的所有锚点元素.
+    //由于向后兼容的原因,该属性只返回那些拥有name属性的a元素,而不是那些拥有id属性的a元素.
+    console.log(document.anchors);
+    console.log(document.anchors.length);
+
+    var a = document.anchors[3];
+
+    a.style.fontSize='50px';
+
+    for(var i=0;i<document.anchors.length;i++){
+        document.anchors[i].style.color='red';
+    }
+
+
+
+</script>
+
+
+</body>
+</html>

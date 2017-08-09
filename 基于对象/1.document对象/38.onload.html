@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!-- 页面相关 -->
+<!--页面加载之后立即执行一段 JavaScript：-->
+<!--定义和用法-->
+<!--onload 事件会在页面或图像加载完成后立即发生。-->
+<!--onload 通常用于 <body> 元素，在页面完全载入后(包括图片、css文件等等。)执行脚本代码。-->
+<!--语法-->
+<!--在 HTML 中:-->
+<!--<body onload="SomeJavaScriptCode">-->
+<!--在 JavaScript 中:-->
+<!--window.onload=function(){SomeJavaScriptCode};-->
+
+
+<img src="../../11.响应式网页设计/img/zhoujielun.png" onload="loadImage()">
+
+<script>
+   /* 在 <img> 使用onload
+    图片载入后立即弹出 "Image is loaded"*/
+
+    function loadImage(){
+        alert("图片加载完成");
+    }
+</script>
+
+</body>
+</html>

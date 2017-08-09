@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<!--JavaScript ondblclick 事件-->
+<!--当鼠标双击页面上某个对象时，会触发 ondblclick 事件-->
+
+字段1: <input type="text" id="field1" value="Hello World!" >
+<br />
+字段2: <input type="text" id="field2" ondblclick="this.value=''">
+<button ondblclick="document.getElementById('field2').value = document.getElementById('field1').value">拷贝</button>
+<span>（双击此按钮拷贝）</span>
+
+
+
+
+</body>
+</html>

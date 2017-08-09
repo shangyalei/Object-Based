@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<script>
+    //cloneNode(boolean);此方法接收一个布尔值参数，用于复制节点的操作
+    //参数为false的时候为前浅复制，只复制节点本身
+    //参数为true的时候为深复制，会复制节点本身及其整个子节点树
+    //复制后的节点不会自动插入文档中，处于游离状态
+    //如果克隆后，id一样，不用忘记用setAttribute("id","another_id");来改变新节点的id
+
+    var msg=document.createTextNode("hello world");
+    var container=document.createElement("p");
+    container.appendChild(msg);
+    document.body.appendChild(container);
+    var newpara=container.cloneNode(false);
+    document.body.appendChild(newpara);
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

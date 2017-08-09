@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1"></div>
+
+<script>
+
+
+//    定义和用法
+//    onmouseenter 事件在鼠标指针移动到元素上时触发。
+//    提示： 该事件通常与 onmouseleave 事件一同使用, 在鼠标指针移出元素上时触发。
+//    提示： onmouseenter 事件类似于 onmouseover 事件。 唯一的区别是 onmouseenter 事件不支持冒泡 。
+
+    var oDiv=document.getElementById('div1');
+    oDiv.onmouseenter=function(){
+        alert("您已进入红色div区域！");
+    }
+
+
+</script>
+
+
+
+</body>
+</html>

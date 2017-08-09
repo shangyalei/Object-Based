@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<!--JavaScript onselect 事件：文本框中的文本被选中
+JavaScript onselect 事件
+文本框中的文本被选中时会触发 onselect 事件。
+支持该事件的 HTML 标签
+<input type="text">, <textarea>
+支持该事件的 JavaScript 对象
+window-->
+
+<form>
+    单行文本：<input type="text" value="Hello world!" onselect="alert('文本已被选中！')" />
+    <br /><br />
+    多行文本：<textarea cols="20" rows="5" onselect="alert('文本已被选中！')">Hello world!</textarea>
+</form>
+
+<br/>
+<br/>
+<br/>
+提示
+如上例所示，在 IE 浏览器中，当我们用鼠标滑动去选择文本框中的字符串是，
+只要有一个字符被选中即触发 onselect 事件而不是全部选中并松开鼠标后触发。
+如果要达到全部选中并松开鼠标后才触发 onselect 事件的效果，
+可以仿照 onresize 事件中的例子，利用 setTimeout() 方法延时触发 onselect 事件，
+或者同时结合 onkeyup 事件来处理。
+
+</body>
+</html>

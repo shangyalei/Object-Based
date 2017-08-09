@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+
+<div id="div1">
+    <p>hello world</p>
+    <p>hello world</p>
+    <p>hello world</p>
+    <p>hello world</p>
+    <p>hello world</p>
+</div>
+</body>
+<script>
+//            Warning: 不要在生产环境中使用该属性,由于其作用基本可以被element.children.length所取代,
+//            所以在未来版本的Gecko中,该属性可能会被删除. 查看
+//该属性为只读属性.
+//childElementCount属性返回当前元素的子元素个数,而不是子节点个数.
+//        只有当一个节点的nodeType属性为1(Node.ELEMENT_NODE==1)时,它才是元素节点 .
+//        文本节点和注释节点不属于元素节点.
+//
+//        如果你需要获取一个元素的子元素而不是子元素个数, 请使用element.children属性.
+//
+//        注意:在IE9之前,element.children会包含一个元素的子元素节点和子注释节点.
+//        在IE9之后或者其他浏览器中, 只包含子元素节点.
+//
+//        另外,由于IE9之前的版本不支持childElementCount属性,
+//        所以如果考虑兼容性的话,
+//        请使用element.children.length(并且需要判断nodeType是否为1)来代替childElementCount属性.
+
+    var oDiv=document.getElementById('div1');
+    console.log(oDiv.childElementCount);
+
+</script>
+</html>
+

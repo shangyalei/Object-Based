@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<!--
+onselectstart
+使用js禁止用户选中网页上的内容，IE及Chrome下的方法一样。
+-->
+<!--onselectstart与onselect—禁止选择或禁止复制-->
+
+
+<div id="tmp" onselectstart="return false">onselectstart几乎可以用于所有对象</div>
+
+<!--注：-->
+<!--1、onselectstart事件不被input和textarea标签支持，而onselect事件只被input和textarea支持。-->
+<!--2、Firefox/Opera不支持onselectstart事件Firefox中可以使用CSS "-moz-user-select:none"属性来禁止文本选定-->
+<!--3、webkit浏览器可以使用“-khtml-user-select”，当然也可以使用onselectstart事件来阻止用户选定元素内文本，如下-->
+<!--<div onselectstart="return false">accc</div>-->
+
+<!--onselect-->
+<!--onselect是在文本框（input、textarea）内的文本被选中时所触发的事件，其触发时间是在文本被选择以后（即文本已经被选择，已经-->
+<!--显式的表现出来）。该事件只被input和textarea标签支持。-->
+
+</body>
+</html>

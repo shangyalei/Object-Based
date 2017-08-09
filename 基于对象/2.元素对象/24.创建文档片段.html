@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<ul id="myList"></ul>
+
+<script>
+    //document.createDocumentFragment();
+    /*
+    * 此方法用于创建文档片段，虽然不能把文档片段直接添加到文档中，但是它可以作为一个"仓库"来使用。
+    * 将可能需要添加到文档中的节点暂时保存在这里。
+    * 需要添加时，可以一次性将需要添加的节点添加到文档中。
+    * 避免浏览器的反复渲染，提高性能
+    * */
+
+    var oFragment=document.createDocumentFragment();
+    var ul=document.getElementById("myList");
+
+    var oLi=null;
+
+    for(var i=0;i<10;i++){
+        oLi=document.createElement("li");
+        oLi.appendChild(document.createTextNode("item"+(i+1)));
+        //创建好的节点暂时放到仓库
+        oFragment.appendChild(oLi);
+        console.dir(oLi);
+    }
+
+    //一起给ul
+    ul.appendChild(oFragment);
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

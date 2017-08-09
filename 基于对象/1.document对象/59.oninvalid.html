@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form action="#" method="get">
+    姓名: <input type="text" oninvalid="alert('该项不能空!');" name="fname" required>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+<p>下框内如果少于6个字将触发oninvalid事件</p>
+<form action="#" method="get">
+    姓名: <input type="text" id="myI" name="fname" pattern=".{6,}">
+    <input type="submit" value="Submit">
+</form>
+<script>
+    document.getElementById("myI").addEventListener("invalid", myFc);
+    function myFc() {
+        alert("不能少于6个字！");
+    }
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div id="zhufeng">
+    <div id="a">a</div>
+    <div id="b">b</div>
+    <div id="c">c</div>
+</div>
+
+<script>
+    //replace(newNode,oldNode)方法的使用
+    //1.删除一个子节点
+    //2.用一个新的节点代替原来节点的位置。
+    //3.第一个参数是新节点，第二个参数是被替换的节点
+    //4.被替换的节点并没有消失，只是在文档树中被移除，没有了它的位置，但还存在于文档中。
+    //5.这个方法由父元素调用
+    //6.如果替换成功，则返回被替换的节点，如替换失败则返回null
+    var zhufeng=document.getElementById("zhufeng");
+    var msg=document.getElementById("b");
+    var para=document.createElement("p");
+    var text=document.createTextNode("我的新的节点，旧的节点已经被我替换掉了");
+    para.appendChild(text);
+
+    //替换节点，并把被替换的节点保存起来
+    var ele=zhufeng.replaceChild(para,msg);
+
+    //打印被替换的节点
+    console.log(ele);
+
+    //说白了，就是这个方法由父元素来调用，来替换它的子节点。
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border:2px solid blue;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1">
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+</div>
+
+<script>
+
+    //如果没有内容溢出，相当于clientHeight; 如果内容溢出了包含内容溢出部分 不含border
+    var oDiv=document.getElementById("div1");
+
+    console.log(oDiv.scrollHeight);
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

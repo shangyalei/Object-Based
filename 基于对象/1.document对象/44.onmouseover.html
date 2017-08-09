@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+
+        function mouseOver()
+        {
+            document.getElementById('div1').style.border = "1px solid red";
+        }
+        function mouseOut()
+        {
+            document.getElementById('div1').style.border = "1px solid white";
+        }
+
+    </script>
+</head>
+<body>
+<!--JavaScript onmouseover 事件与 onmouseout 事件：鼠标指针移动到对象上或离开对象-->
+<!--JavaScript onmouseover 事件与 onmouseout 事件-->
+<!--鼠标指针移动到指定对象上会触发 onmouseover 事件；鼠标指针离开指定对象上会触发 onmouseout 事件，二者非常相似，只是具体的触发动作正好相反。-->
+
+<div id="div1" style="width:300px;border:1px solid white;" onmouseover="mouseOver()" onmouseout="mouseOut()">
+    <p style="line-height:2em;text-align:center;">我是一些文字或者图片</p>
+</div>
+
+
+<!--提示：由于元素的 CSS border 属性不在高度宽度值之内，因此为避免字体晃动，预先将 div 的边框设置为白色（与底色一致，不被显示出来）。-->
+<!--JavaScript onmouseup 与 onmouseout 结合 CSS display 属性常用于 web 菜单的制作。-->
+
+
+
+
+
+</body>
+</html>
